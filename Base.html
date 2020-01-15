@@ -1,0 +1,184 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="Stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Expletus+Sans&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+  <header>
+    <div class="header_boven">
+      <a href="base.html">
+        <img class="logoimg" src="images/hhb-logo-social.png" alt="Heel Holland Bakt">
+      </a>
+      <h1>Heel Holland Bakt</h1>
+      <a href="Base_ingelogd.html">
+        <img class="userimg" src="images/user.png" alt="user">
+      </a>
+    </div>
+    <nav >
+      <ul class="header_menu">
+        <li>
+          <a href="workshops_page.html">
+            <span>Workshops</span>
+          </a>
+        </li>
+        <li>
+          <a href="recepten_page.html">
+            <span>Recepten</span>
+          </a>
+        </li>
+        <li>
+          <a href="Base_ingelogd.html">
+            <span>Mijn Gegevens</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INLOG FORMULIER  -->
+    <form action="Base_ingelogd.html" method="post">
+      <div class="inlog_container">
+        <div class="cont_username">
+          <label for="uname"><b>Username:  </b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+        </div>
+        <div class="cont_password">
+          <label for="psw"><b>Password: </b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+        </div>
+        <div class="cont_submit">
+          <button type="submit">Login</button>
+        </div>
+        <div class="cont_remember">
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      </div>
+    </form>
+
+    <!-- VOORGESTELDE WORKSHOPS  -->
+    <div class="aantal_workshops">
+    <h2 class="koptitels">Aantal Workshops:</h2>
+    <article class="aant_workshops">
+      <section class="workshop1">
+        <img class="workshop1img" src="images/broodjes.jpg" alt="broodjes">
+        <h3>Brood</h3>
+        <p>Haarlem</p>
+        <p>15 April</p>
+        <p>09:00 - 12:00</p>
+        <a href="singel_workshop_brood.html">
+          <p>Meer Informatie</p>
+        </a>
+      </section>
+      <section class="workshop2">
+        <img class="workshop2img" src="images/cake.jpg" alt="cake">
+        <h3>Cake</h3>
+        <p>Amsterdam</p>
+        <p>15 April</p>
+        <p>12:00 - 15:00</p>
+        <a href="singel_workshop_brood.html">
+          <p>Meer Informatie</p>
+        </a>
+      </section>
+      <section class="workshop3">
+        <img class="workshop3img" src="images/taart.jpg" alt="taart">
+        <h3>Taart</h3>
+        <p>Amstelveen</p>
+        <p>17 April</p>
+        <p>15:00 - 17:00</p>
+        <a href="singel_workshop_brood.html">
+          <p>Meer Informatie</p>
+        </a>
+      </section>
+      <section class="workshop4">
+        <img class="workshop4img" src="images/steak.jpg" alt="steak">
+        <h3>Steak</h3>
+        <p>Haarlem</p>
+        <p>18 April</p>
+        <p>12:00 - 15:00</p>
+        <a href="singel_workshop_brood.html">
+          <p>Meer Informatie</p>
+        </a>
+      </section>
+    </article>
+    </div>
+
+    <!-- VOORGESTELDE RECEPTEN  -->
+    <div class="aantal_recepten">
+    <h2 class="koptitels">Aantal Recepten:</h2>
+    <article class="aant_recepten">
+      <section class="recept1">
+        <img class="recept1img" src="images/broodjes.jpg" alt="broodjes">
+        <h3>Brood</h3>
+        <p>170 Stemmen</p>
+        <a href="singel_recept_brood.html">
+          <p>Meer Informatie</p>
+        </a>
+      </section>
+      <section class="recept2">
+        <img class="recept2img" src="images/cake.jpg" alt="cake">
+        <h3>Cake</h3>
+        <p>183 Stemmen</p>
+        <a href="singel_recept_brood.html">
+          <p>Meer Informatie</p>
+        </a>
+      </section>
+      <section class="recept3">
+        <img class="recept3img" src="images/taart.jpg" alt="taart">
+        <h3>Taart</h3>
+        <p>399 Stemmen</p>
+        <a href="singel_recept_brood.html">
+          <p>Meer Informatie</p>
+        </a>
+      </section>
+      <section class="recept4">
+        <img class="recept4img" src="images/steak.jpg" alt="steak">
+        <h3>Steak</h3>
+        <p>142 Stemmen</p>
+        <a href="singel_recept_brood.html">
+          <p>Meer Informatie</p>
+        </a>
+      </section>
+    </article>
+    </div>
+
+    <!-- BAKSEL VOORDRAGEN  -->
+    <article class="art_voordragen">
+
+    <h2 class="voordraagtitel">Zelf een Baksel voordragen?</h2>
+    <p>Wilt u kans maken op een vrijkaart naar keuze en aanwezig zijn bij de workshop waar uw baksel gebakken wordt?
+    <p>Stuur uw baksel in!</p>
+    <button class="voordraagknop" type="submit">Baksel Voordragen</button>
+
+    </article>
+
+
+  </main>
+
+  <footer>
+    <nav >
+      <ul class="footer_menu">
+        <li>
+          <a href="workshops_page.html">
+            <span>Workshops</span>
+          </a>
+        </li>
+        <li>
+          <a href="recepten_page.html">
+            <span>Recepten</span>
+          </a>
+        </li>
+        <li>
+          <a href="Base_ingelogd.html">
+            <span>Mijn Gegevens</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>

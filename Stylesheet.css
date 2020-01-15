@@ -1,0 +1,452 @@
+body{
+  font-family: "Poppins",sans-serif;
+  font-size: 1em;
+  background-color: lightgrey;
+}
+
+h1{
+  font-size: 2em;
+}
+
+/*--- HEADER en FOOTER ---*/
+
+.header_boven{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  align-items:center;
+}
+
+
+header img{
+  padding: 10px;
+}
+.logoimg{
+  min-width: 70px;
+  max-width: 70px;
+  min-height: 70px;
+  max-height: 70px;
+}
+.userimg{
+  min-width: 50px;
+  max-width: 50px;
+  min-height: 50px;
+  max-height: 50px;
+}
+.header_menu{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lavender;
+  padding: 1em;
+  list-style-type: none;
+}
+
+li{
+  background-color: white;
+  padding:0.5em;
+  border-radius: 15px;
+}
+
+.footer_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lavender  ;
+    padding: 1em;
+    list-style-type: none;
+    bottom: 0;
+  }
+}
+
+header h1{
+  font-weight: bold;
+}
+
+/*--- INLOGGEN ---*/
+
+.inlog_container{
+  height:9em;
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  align-content: center;
+  justify-content:space-around;
+  background-color: white;
+  padding:1em;
+}
+
+.cont_username, .cont_password{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width:50%;
+  max-width: 18em;
+  min-width: 16em;
+}
+
+.ingelogd{
+   text-align: center;
+}
+
+/*--- AANTAL WORKSHOPS ---*/
+.aantal_workshops{
+  background-color: lavender;
+  padding-bottom: 1em;
+}
+
+.koptitels{
+  margin-left: 2em;
+  margin-top: 2em;
+  padding-top: 1em;
+}
+
+.aant_workshops{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top:1em;
+}
+
+.workshop1, .workshop2, .workshop3, .workshop4{
+  background-color: white;
+  width: 10em;
+  padding:1em;
+  margin: 0.5em;
+}
+
+.aant_workshops img{
+ max-width:15em;
+ min-width:10em;
+ min-height: 7em;
+ width: 22%
+}
+
+.aant_workshops p{
+margin-top: -0.5em;
+}
+
+/*--- AANTAL RECEPTEN ---*/
+.aantal_recepten{
+  background-color: lavender;
+  padding-bottom: 1em;
+}
+
+.aant_recepten{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 2em;
+  margin-right: 2em;
+
+}
+
+.recept1, .recept2, .recept3, .recept4{
+  background-color: white;
+  width: 10em;
+  padding:1em;
+  margin: 0.5em;
+}
+
+.aant_recepten img{
+ max-width:15em;
+ min-width:10em;
+ min-height: 7em;
+ width: 22%
+}
+
+.aant_recepten p{
+margin-top: -0.5em;
+}
+
+/*--- BAKSEL VOORDRAGEN ---*/
+
+.art_voordragen{
+  background-color: white;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.art_voordragen p{
+  margin-left: 1em;
+}
+
+.voordraagknop{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*------------ INLOGPAGINA ------------*/
+
+/*--- MELDINGEN ---*/
+
+.art_meldingen h2{
+  text-align: center;
+}
+
+.art_meldingen{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  align-content:flex-start;
+  padding-left: 5%;
+  background-color: lavender;
+
+}
+.melding1, .melding2, .melding3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  margin-bottom: 1em;
+}
+
+.melding_tekst{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.art_meldingen img{
+ max-width: 10em;
+ min-width: 10em;
+ min-height: 7em;
+ width: 22%;
+ padding: 1em;
+}
+
+/* --- KOMENDE WORKSHOPS ---*/
+
+.art_kom_workshops{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-bottom: 1em;
+}
+
+.art_kom_workshops img{
+ max-width:15em;
+ min-width:10em;
+ min-height: 7em;
+ width: 22%
+}
+
+.art_kom_workshops p{
+margin-top: -0.5em;
+}
+
+.kom_workshop1, .kom_workshop2{
+  background-color: white;
+  width: 10em;
+  padding:1em;
+  margin: 0.5em;
+}
+
+.komende_workshops{
+  background-color: lavender;
+}
+
+/*--- MIJN VOORGEDRAGEN BAKSELS ---*/
+
+.art_voor_baksels{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+flex-wrap: nowrap;
+align-content:flex-start;
+padding-left: 5%;
+background: lavender;
+}
+
+.art_voor_baksels img{
+ max-width:15em;
+ min-width:10em;
+ min-height: 7em;
+ width: 22%;
+ margin-top: 1em;
+ padding: 1em;
+}
+
+.art_voor_baksels{
+  margin-top: 3em;
+  padding-bottom: 2em;
+}
+
+.voor_baksel1, .voor_baksel2, .voor_baksel3{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+  flex-wrap: nowrap;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.voorbaksel_p{
+  margin-left: 6em;
+}
+
+.voorbaksel_p2{
+  color:green;
+}
+
+.voorbaksel_p3{
+  color:yellow;
+}
+
+.div_voor_baksel1, .div_voor_baksel2, .div_voor_baksel3{
+  background-color: white;
+  margin-top: 1em;
+}
+
+/*--- MIJN OPGESLAGEN WORKSHOPS ---*/
+
+.art_saved_workshop img{
+  max-width:15em;
+  min-width:10em;
+  min-height: 7em;
+  width: 22%;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.saved_workshop1, .saved_workshop2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  margin-bottom: 1em;
+}
+
+.art_saved_workshop{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  align-content:flex-start;
+  padding-left: 5%;
+  background-color: lavender;
+  margin-top: 2em;
+}
+
+.saved_workshop_tekst{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+/*--- MIJN OPGESLAGEN BAKSELS ---*/
+
+.art_saved_baksel img{
+  max-width:15em;
+  min-width:10em;
+  min-height: 7em;
+  width: 22%;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.saved_baksel1, .saved_baksel2, .saved_baksel3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  margin-bottom: 1em;
+}
+
+.art_saved_baksel{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  align-content:flex-start;
+  padding-left: 5%;
+  background-color: lavender;
+  margin-top: 2em;
+}
+
+.saved_baksel_tekst{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+/*------------ Ticket PAGINA ------------*/
+.workshop_ticket_image_brood{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  align-content:flex-start;
+  background-color: white;
+}
+
+.workshop_ticket_image_brood img{
+width: 45%;
+min-width: 15em;
+padding: 2em;
+}
+
+.tekst_workshop_ticket, .tekst_workshop_qr {
+  margin: 2em;
+  padding: 2em;
+  width: 50%;
+  background-color: lavender;
+}
+
+.workshop_ticket_image_qr{
+  margin-top: 2em;
+  padding: 2em;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  align-content:flex-start;
+  background-color: white;
+}
+
+/*------------ Recept PAGINA ------------*/
+
+.tekst_recept {
+  margin: 2em;
+  padding: 2em;
+  width: 50%;
+  background-color: lavender;
+}
+
+.ingredietenlist {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  align-content:flex-start;
+}
