@@ -1,85 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
 <head>
+  <title>HHB - Recepten</title>
   <link rel="stylesheet" type="text/css" href="Stylesheet.css">
   <link href="https://fonts.googleapis.com/css?family=Expletus+Sans&display=swap" rel="stylesheet">
+  <script src="menu.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<main>
+  <main>
+    <a id="top"></a>
+
+    <!-- Header met navigatie -->
+    <header>
+      <div class="javascript_call">
+        <nav>
+          <ul>
+            <li>
+              <a href="workshops_page.html">
+                <span>Workshops</span>
+              </a>
+            </li>
+            <li>
+              <a href="recepten_page.html">
+                <span>Recepten</span>
+              </a>
+            </li>
+            <li>
+              <a href="Base_ingelogd.html">
+                <span>Mijn Gegevens</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header_boven">
+        <a href="base.html">
+          <img src="images/hhb-logo-social.png" alt="Heel Holland Bakt">
+        </a>
+        <h1>Heel Holland Bakt</h1>
+        <div class=javabutton>
+          <p>Menu</p>
+        </div>
+      </div>
+    </header>
 
 
-  <header>
-    <div class="header_boven">
-      <a href="base.html">
-        <img class="logoimg" src="images/hhb-logo-social.png" alt="Heel Holland Bakt">
-      </a>
-      <h1>Heel Holland Bakt</h1>
-      <a href="Base_ingelogd.html">
-        <img class="userimg" src="images/user.png" alt="user">
-      </a>
+    <!-- Aantal Recepten -->
+    <div class="aantal_recepten">
+      <h2>Recepten:</h2>
+      <article>
+        <section>
+          <img src="images/broodjes.jpg" alt="broodjes">
+          <h3>Brood</h3>
+          <p>170 Stemmen</p>
+          <a href="singel_recept_brood.html">
+            <p>Meer Informatie</p>
+          </a>
+        </section>
+        <section>
+          <img src="images/cake.jpg" alt="cake">
+          <h3>Cake</h3>
+          <p>183 Stemmen</p>
+          <a href="singel_recept_brood.html">
+            <p>Meer Informatie</p>
+          </a>
+        </section>
+        <section>
+          <img src="images/taart.jpg" alt="taart">
+          <h3>Taart</h3>
+          <p>399 Stemmen</p>
+          <a href="singel_recept_brood.html">
+            <p>Meer Informatie</p>
+          </a>
+        </section>
+        <section>
+          <img src="images/steak.jpg" alt="steak">
+          <h3>Steak</h3>
+          <p>142 Stemmen</p>
+          <a href="singel_recept_brood.html">
+            <p>Meer Informatie</p>
+          </a>
+        </section>
+      </article>
     </div>
-    <nav >
-      <ul class="header_menu">
-        <li>
-          <a href="workshops_page.html">
-            <span>Workshops</span>
-          </a>
-        </li>
-        <li>
-          <a href="recepten_page.html">
-            <span>Recepten</span>
-          </a>
-        </li>
-        <li>
-          <a href="Base_ingelogd.html">
-            <span>Mijn Gegevens</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
 
-<div class="aantal_recepten">
-  <h2 class="koptitels">Recepten:</h2>
-  <article class="aant_recepten">
-    <section class="recept1">
-      <img class="recept1img" src="images/broodjes.jpg" alt="broodjes">
-      <h3>Brood</h3>
-      <p>170 Stemmen</p>
-      <a href="singel_recept_brood.html">
-        <p>Meer Informatie</p>
+    <footer>
+      <a href="#top">
+        <p>Stuur me naar boven</p>
       </a>
-    </section>
-    <section class="recept2">
-      <img class="recept2img" src="images/cake.jpg" alt="cake">
-      <h3>Cake</h3>
-      <p>183 Stemmen</p>
-      <a href="singel_recept_brood.html">
-        <p>Meer Informatie</p>
-      </a>
-    </section>
-    <section class="recept3">
-      <img class="recept3img" src="images/taart.jpg" alt="taart">
-      <h3>Taart</h3>
-      <p>399 Stemmen</p>
-      <a href="singel_recept_brood.html">
-        <p>Meer Informatie</p>
-      </a>
-    </section>
-    <section class="recept4">
-      <img class="recept4img" src="images/steak.jpg" alt="steak">
-      <h3>Steak</h3>
-      <p>142 Stemmen</p>
-      <a href="singel_recept_brood.html">
-        <p>Meer Informatie</p>
-      </a>
-    </section>
-  </article>
-  </div>
-</main>
-
-<footer>
+      <!--
   <nav >
-    <ul class="footer_menu">
+    <ul>
       <li>
         <a href="workshops_page.html">
           <span>Workshops</span>
@@ -97,5 +112,16 @@
       </li>
     </ul>
   </nav>
-</footer>
+  -->
+    </footer>
+  </main>
 </body>
+
+<!---
+      bronnen
+      https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+      https://www.w3schools.com/   (verschillende pagina's)
+      https://html.com/
+ -->
+
+</html>

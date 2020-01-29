@@ -1,113 +1,227 @@
-body{
-  font-family: "Poppins",sans-serif;
-  font-size: 1em;
-  background-color: lightgrey;
+/*-- BASE CSS --*/
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #FFF0F5;
+  line-height: 1.5;
 }
 
-h1{
-  font-size: 2em;
+html, body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a[href]:not([class]) {
+  color: #1E90FF;
+  text-decoration: none;
+  transition: all ease-in-out .3s;
+}
+
+h2, h3 {
+  font-family: 'Pacifico', 'Poppins', sans-serif, cursive;
+}
+
+p {
+  font-family: 'Indie Flower', 'Poppins', sans-serif, cursive;
+  font-size: 1.2em;
+}
+
+/*-- JAVASCRIPT CSS --*/
+.javascript_call {
+  margin-top: -6em;
+  transition: margin 0.4s ease-out;
+}
+
+.show {
+  margin-top: 0em;
 }
 
 /*--- HEADER en FOOTER ---*/
-
-.header_boven{
+.header_boven {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
   background-color: white;
-  align-items:center;
+  align-items: center;
+  border-radius: 25px;
 }
 
-
-header img{
-  padding: 10px;
+.header_boven h1, .header_boven p {
+  font-family: 'Pacifico', 'Poppins', sans-serif, cursive;
 }
-.logoimg{
+
+header span {
+  font-size: 1.25em;
+  font-family: 'Pacifico', 'Poppins', sans-serif, cursive;
+}
+
+header img {
   min-width: 70px;
   max-width: 70px;
   min-height: 70px;
   max-height: 70px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
-.userimg{
-  min-width: 50px;
-  max-width: 50px;
-  min-height: 50px;
-  max-height: 50px;
-}
-.header_menu{
+
+header nav ul {
   display: flex;
-  flex: 1;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   background-color: lavender;
   padding: 1em;
   list-style-type: none;
+  border-radius: 25px;
 }
 
-li{
+li {
   background-color: white;
-  padding:0.5em;
-  border-radius: 15px;
+  padding: 0.75em;
+  border-radius: 25px;
 }
 
-.footer_menu{
+footer p {
+  background-color: lavender;
+  padding: 1em;
+  text-align: center;
+  border-radius: 25px;
+}
+
+/*--
+footer nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     background-color: lavender  ;
     padding: 1em;
     list-style-type: none;
-    bottom: 0;
   }
+  --*/
+header h1 {
+  font-weight: bold;
+  align-self: center;
 }
 
-header h1{
+header p {
+  margin-right: 1.5em;
+  font-size: 1.5em;
+  color: black;
   font-weight: bold;
 }
 
 /*--- INLOGGEN ---*/
-
-.inlog_container{
-  height:9em;
-  display: flex;
-  align-items: center;
-  flex-direction:column;
-  align-content: center;
-  justify-content:space-around;
-  background-color: white;
-  padding:1em;
+main form {
+  margin-top: 1em;
 }
 
-.cont_username, .cont_password{
+main legend {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+fieldset {
+  transition: all .5s;
+  padding: 1em;
+  border: none;
+}
+
+.inlog_container input {
+  width: 50%;
+  transition: all 1s;
+  z-index: 2;
+  margin: 1em;
+}
+
+input:valid {
+  border-color: green;
+}
+
+input:invalid {
+  border-color: MediumVioletRed;
+  background: LightPink;
+}
+
+input:focus {
+  transform: scale(1.01, 1.01);
+}
+
+input:focus+p.tooltip {
+  display: block;
+  opacity: 1;
+  margin-top: -1.3em;
+}
+
+input:disabled {
+  border-color: #eee;
+  background-color: #f9f9f9;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, .25);
+  font-style: italic;
+}
+
+button {
+  font-size: 1em;
+  flex: 0 0 2em;
+  transition: all .2s 1s;
+  opacity: 0;
+  width: 4em;
+}
+
+form:valid button {
+  opacity: 1
+}
+
+button:focus {
+  transform: scale(1.1, 1.1);
+}
+
+fieldset:valid {
+  background: #98FB98;
+}
+
+fieldset:invalid {
+  background: rgba(255, 0, 0, .1);
+}
+
+.inlog_container {
+  height: 9em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+.cont_username, .cont_password {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width:50%;
-  max-width: 18em;
-  min-width: 16em;
+  min-width: 21em;
 }
 
-.ingelogd{
-   text-align: center;
+.ingelogd {
+  text-align: center;
 }
 
 /*--- AANTAL WORKSHOPS ---*/
-.aantal_workshops{
+.aantal_workshops {
   background-color: lavender;
   padding-bottom: 1em;
+  border-radius: 25px;
 }
 
-.koptitels{
+.aantal_workshops h2 {
   margin-left: 2em;
   margin-top: 2em;
   padding-top: 1em;
 }
 
-.aant_workshops{
+.aantal_workshops article {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -115,101 +229,121 @@ header h1{
   flex-wrap: wrap;
   margin-left: 2em;
   margin-right: 2em;
-  margin-top:1em;
-}
-
-.workshop1, .workshop2, .workshop3, .workshop4{
-  background-color: white;
-  width: 10em;
-  padding:1em;
-  margin: 0.5em;
-}
-
-.aant_workshops img{
- max-width:15em;
- min-width:10em;
- min-height: 7em;
- width: 22%
-}
-
-.aant_workshops p{
-margin-top: -0.5em;
-}
-
-/*--- AANTAL RECEPTEN ---*/
-.aantal_recepten{
-  background-color: lavender;
-  padding-bottom: 1em;
-}
-
-.aant_recepten{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-left: 2em;
-  margin-right: 2em;
-
-}
-
-.recept1, .recept2, .recept3, .recept4{
-  background-color: white;
-  width: 10em;
-  padding:1em;
-  margin: 0.5em;
-}
-
-.aant_recepten img{
- max-width:15em;
- min-width:10em;
- min-height: 7em;
- width: 22%
-}
-
-.aant_recepten p{
-margin-top: -0.5em;
-}
-
-/*--- BAKSEL VOORDRAGEN ---*/
-
-.art_voordragen{
-  background-color: white;
-  padding: 1em;
   margin-top: 1em;
 }
 
-.art_voordragen p{
+.aantal_workshops article section {
+  background-color: white;
+  width: 10em;
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 25px;
+}
+
+.aantal_workshops img {
+  max-width: 15em;
+  min-width: 10em;
+  min-height: 7em;
+  width: 22%
+}
+
+.aantal_workshops img:hover {
+  opacity: 0.7;
+  border-radius: 20px;
+  transition-timing-function: ease-in-out;
+}
+
+.aant_workshops p {
+  margin-top: -0.5em;
+}
+
+/*--- AANTAL RECEPTEN ---*/
+.aantal_recepten {
+  background-color: lavender;
+  padding-bottom: 1em;
+  border-radius: 25px;
+}
+
+.aantal_recepten h2 {
+  margin-left: 2em;
+  margin-top: 2em;
+  padding-top: 1em;
+}
+
+.aantal_recepten article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.aantal_recepten article section {
+  background-color: white;
+  width: 10em;
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 25px;
+}
+
+.aantal_recepten img {
+  max-width: 15em;
+  min-width: 10em;
+  min-height: 7em;
+  width: 22%
+}
+
+.aantal_recepten img:hover {
+  opacity: 0.7;
+  border-radius: 20px;
+  transition-timing-function: ease-in-out;
+}
+
+.aantal_recepten p {
+  margin-top: -0.5em;
+}
+
+/*--- BAKSEL VOORDRAGEN ---*/
+.art_voordragen {
+  background-color: white;
+  padding: 1em;
+  margin-top: 1em;
+  border-radius: 25px;
+}
+
+.art_voordragen p, .art_voordragen h2 {
   margin-left: 1em;
 }
 
-.voordraagknop{
+.art_voordragen button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 25%;
+  opacity: 1;
 }
 
 /*------------ INLOGPAGINA ------------*/
-
 /*--- MELDINGEN ---*/
-
-.art_meldingen h2{
+.art_meldingen h2 {
   text-align: center;
 }
 
-.art_meldingen{
+.art_meldingen {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: nowrap;
-  align-content:flex-start;
+  align-content: flex-start;
   padding-left: 5%;
   background-color: lavender;
-
+  border-radius: 25px;
 }
-.melding1, .melding2, .melding3{
+
+.art_meldingen section {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -217,122 +351,156 @@ margin-top: -0.5em;
   justify-content: flex-start;
   background-color: white;
   margin-bottom: 1em;
+  border-radius: 25px;
 }
 
-.melding_tekst{
+.art_meldingen section p,
+.art_meldingens section h3 {
   padding-left: 2em;
   padding-right: 2em;
 }
 
-.art_meldingen img{
- max-width: 10em;
- min-width: 10em;
- min-height: 7em;
- width: 22%;
- padding: 1em;
+.art_meldingen img {
+  max-width: 10em;
+  min-width: 10em;
+  min-height: 7em;
+  width: 22%;
+  padding: 1em;
+}
+
+.art_meldingen img:hover {
+  opacity: 0.7;
+  border-radius: 20px;
+  transition-timing-function: ease-in-out;
 }
 
 /* --- KOMENDE WORKSHOPS ---*/
+.komende_workshops h2 {
+  margin-left: 2em;
+  margin-top: 2em;
+  padding-top: 1em;
+}
 
-.art_kom_workshops{
+.komende_workshops article {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content:flex-start;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-left: 2em;
   margin-right: 2em;
   padding-bottom: 1em;
 }
 
-.art_kom_workshops img{
- max-width:15em;
- min-width:10em;
- min-height: 7em;
- width: 22%
+.komende_workshops img {
+  max-width: 15em;
+  min-width: 10em;
+  min-height: 7em;
+  width: 22%
 }
 
-.art_kom_workshops p{
-margin-top: -0.5em;
+.komende_workshops img:hover {
+  opacity: 0.7;
+  border-radius: 20px;
+  transition-timing-function: ease-in-out;
 }
 
-.kom_workshop1, .kom_workshop2{
+.komende_workshops p {
+  margin-top: -0.5em;
+}
+
+.komende_workshops article section {
   background-color: white;
   width: 10em;
-  padding:1em;
+  padding: 1em;
   margin: 0.5em;
+  border-radius: 25px;
 }
 
-.komende_workshops{
+.komende_workshops {
   background-color: lavender;
+  border-radius: 25px;
 }
 
 /*--- MIJN VOORGEDRAGEN BAKSELS ---*/
-
-.art_voor_baksels{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: flex-start;
-flex-wrap: nowrap;
-align-content:flex-start;
-padding-left: 5%;
-background: lavender;
-}
-
-.art_voor_baksels img{
- max-width:15em;
- min-width:10em;
- min-height: 7em;
- width: 22%;
- margin-top: 1em;
- padding: 1em;
-}
-
-.art_voor_baksels{
-  margin-top: 3em;
-  padding-bottom: 2em;
-}
-
-.voor_baksel1, .voor_baksel2, .voor_baksel3{
+.art_voor_baksels {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:space-around;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: nowrap;
-  margin-left: 2em;
-  margin-right: 2em;
+  align-content: flex-start;
+  padding-left: 5%;
+  background: lavender;
+  border-radius: 25px;
 }
 
-.voorbaksel_p{
-  margin-left: 6em;
-}
-
-.voorbaksel_p2{
-  color:green;
-}
-
-.voorbaksel_p3{
-  color:yellow;
-}
-
-.div_voor_baksel1, .div_voor_baksel2, .div_voor_baksel3{
-  background-color: white;
-  margin-top: 1em;
-}
-
-/*--- MIJN OPGESLAGEN WORKSHOPS ---*/
-
-.art_saved_workshop img{
-  max-width:15em;
-  min-width:10em;
+.art_voor_baksels img {
+  max-width: 15em;
+  min-width: 10em;
   min-height: 7em;
   width: 22%;
   margin-top: 1em;
   padding: 1em;
 }
 
-.saved_workshop1, .saved_workshop2{
+.art_voor_baksels img:hover {
+  opacity: 0.7;
+  border-radius: 20px;
+  transition-timing-function: ease-in-out;
+}
+
+.art_voor_baksels {
+  margin-top: 3em;
+  padding-bottom: 2em;
+}
+
+.art_voor_baksels section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.div_voor_baksel1 div:nth-child(2) {
+  margin-left: 6em;
+}
+
+.div_voor_baksel2 p:nth-child(1) {
+  color: green;
+}
+
+.div_voor_baksel3 p:nth-child(1) {
+  color: yellow;
+}
+
+.art_voor_baksels div {
+  background-color: white;
+  margin-top: 1em;
+  border-radius: 25px;
+}
+
+/*--- MIJN OPGESLAGEN WORKSHOPS ---*/
+.art_saved_workshop img {
+  max-width: 15em;
+  min-width: 10em;
+  min-height: 7em;
+  width: 22%;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.art_saved_workshop img:hover {
+  opacity: 0.7;
+  border-radius: 20px;
+  transition-timing-function: ease-in-out;
+}
+
+.art_saved_workshop section:nth-child(1),
+.art_saved_workshop section:nth-child(2) {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -340,37 +508,47 @@ background: lavender;
   justify-content: flex-start;
   background-color: white;
   margin-bottom: 1em;
+  border-radius: 25px;
 }
 
-.art_saved_workshop{
+.art_saved_workshop {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: nowrap;
-  align-content:flex-start;
+  align-content: flex-start;
   padding-left: 5%;
   background-color: lavender;
   margin-top: 2em;
+  border-radius: 25px;
 }
 
-.saved_workshop_tekst{
+.art_saved_workshop section p,
+.art_saved_workshop section h3 {
   padding-left: 2em;
   padding-right: 2em;
 }
 
 /*--- MIJN OPGESLAGEN BAKSELS ---*/
-
 .art_saved_baksel img{
-  max-width:15em;
-  min-width:10em;
+  max-width: 15em;
+  min-width: 10em;
   min-height: 7em;
   width: 22%;
   margin-top: 1em;
   padding: 1em;
 }
 
-.saved_baksel1, .saved_baksel2, .saved_baksel3{
+.art_saved_baksel img:hover {
+  opacity: 0.7;
+  border-radius: 20px;
+  transition-timing-function: ease-in-out;
+}
+
+.art_saved_baksel section:nth-child(1),
+.art_saved_baksel section:nth-child(2),
+.art_saved_baksel section:nth-child(1) {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -378,50 +556,67 @@ background: lavender;
   justify-content: flex-start;
   background-color: white;
   margin-bottom: 1em;
+  border-radius: 25px;
 }
 
-.art_saved_baksel{
+.art_saved_baksel {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: nowrap;
-  align-content:flex-start;
+  align-content: flex-start;
   padding-left: 5%;
   background-color: lavender;
   margin-top: 2em;
+  border-radius: 25px;
 }
 
-.saved_baksel_tekst{
+.art_saved_baksel section p,
+.art_saved_baksel section:nth-child(1) h3,
+.art_saved_baksel section:nth-child(2) h3,
+.art_saved_baksel section:nth-child(3) h3 {
   padding-left: 2em;
   padding-right: 2em;
 }
 
 /*------------ Ticket PAGINA ------------*/
-.workshop_ticket_image_brood{
+.ticket_wrapper {
+  margin-top: 2em;
+}
+
+.ticket_wrapper section:nth-child(1) {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: nowrap;
-  align-content:flex-start;
+  align-content: flex-start;
   background-color: white;
+  border-radius: 25px;
 }
 
-.workshop_ticket_image_brood img{
-width: 45%;
-min-width: 15em;
-padding: 2em;
+.ticket_wrapper img {
+  width: 45%;
+  min-width: 15em;
+  padding: 2em;
 }
 
-.tekst_workshop_ticket, .tekst_workshop_qr {
+.ticket_wrapper img:hover {
+  opacity: 0.7;
+  border-radius: 20px;
+  transition-timing-function: ease-in-out;
+}
+
+.ticket_wrapper section article {
   margin: 2em;
   padding: 2em;
   width: 50%;
   background-color: lavender;
+  border-radius: 25px;
 }
 
-.workshop_ticket_image_qr{
+.ticket_wrapper section:nth-child(2) {
   margin-top: 2em;
   padding: 2em;
   padding-left: 5%;
@@ -430,23 +625,26 @@ padding: 2em;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: nowrap;
-  align-content:flex-start;
+  align-content: flex-start;
   background-color: white;
+  border-radius: 25px;
+}
+
+.ticket_wrapper form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.ticket_wrapper form input {
+  margin: 1em;
 }
 
 /*------------ Recept PAGINA ------------*/
-
-.tekst_recept {
-  margin: 2em;
-  padding: 2em;
-  width: 50%;
-  background-color: lavender;
-}
-
 .ingredietenlist {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: nowrap;
-  align-content:flex-start;
+  align-content: flex-start;
 }
